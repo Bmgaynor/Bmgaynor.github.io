@@ -1,6 +1,12 @@
 
 # Created by https://www.gitignore.io/api/node,webstorm
 
+# Compiled output
+public/dist
+public/index.html
+public/sitemap.xml
+
+
 ### Node ###
 # Logs
 logs

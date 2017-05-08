@@ -2,10 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Bradley Gaynor</title>
+    <title>Brad Gaynor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/css/foundation-rtl.css" />
+    <style>
+        .me {
+            width: 25%;
+            height: 25%;
+        }
+        img {
+            border-radius: 65%;
+            border: darkgreen 6px solid;
+            margin: 0 auto;
+        }
+        .about {
+            text-align: center;
+        }
+        .github {
+            width: 10%;
+            height: 10%;
+        }
+    </style>
 </head>
 <body>
-<div id="main"/>
-<script src="build.js"/>
+    <div class="row">
+        <div class="small-6 column">
+            <h2>Hi,</h2>
+            <h2>Im Brad,</h2>
+            <h2>I Love Software Development.</h2>
+        </div>
+        <div class="me small-6 column">
+            <img src="Me.jpg">
+        </div>
+    </div>
+    <div class="about row">
+        <h3>About me</h3>
+        <p>Software developer working in Milwaukee. With a passion for Javascript development.</p>
+    </div>
+    <div class="row">
+        <a href="https://github.com/Bmgaynor">
+            <img class="github" src="GitHub_Logo.png" alt="">
+        </a>
+    </div>
+
+
+
+<script src="bundle.js"></script>
 </body>
 </html>

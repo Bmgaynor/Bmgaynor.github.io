@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Brad Gaynor</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/css/foundation-rtl.css" />
     <style>
         .me {
             width: 25%;
@@ -13,6 +12,12 @@
             border-radius: 65%;
             border: darkgreen 6px solid;
             margin: 0 auto;
+
+
+            display: inline-block;
+            vertical-align: middle;
+            max-width: 100%;
+            height: auto;
         }
         .about {
             text-align: center;
@@ -21,31 +26,40 @@
             width: 10%;
             height: 10%;
         }
+        .section-full {
+            height:100vh;
+            min-height:100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+        }
     </style>
 </head>
 <body>
-    <div class="row">
-        <div class="small-6 column">
-            <h2>Hi,</h2>
-            <h2>Im Brad,</h2>
-            <h2>I Love Software Development.</h2>
+    <section class="section-full">
+        <div class="">
+            <div class="small-6 column">
+                <h2>Hi,</h2>
+                <h2>Im Brad,</h2>
+                <h2>I Love Software Development.</h2>
+            </div>
+            <div class="me small-6 column">
+                <img src="Me.jpg">
+            </div>
         </div>
-        <div class="me small-6 column">
-            <img src="Me.jpg">
+    </section>
+    <section class="section-full">
+        <div class="about ">
+            <h3>About me</h3>
+            <p>Software developer working in Milwaukee. With a passion for Javascript development.</p>
         </div>
-    </div>
-    <div class="about row">
-        <h3>About me</h3>
-        <p>Software developer working in Milwaukee. With a passion for Javascript development.</p>
-    </div>
-    <div class="row">
-        <a href="https://github.com/Bmgaynor">
-            <img class="github" src="GitHub_Logo.png" alt="">
-        </a>
-    </div>
-
-
-
+        <div class="row">
+            <a href="https://github.com/Bmgaynor">
+                <img class="github" src="GitHub_Logo.png" alt="">
+            </a>
+        </div>
+    </section>
 <script src="bundle.js"></script>
 </body>
 </html>

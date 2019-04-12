@@ -1,9 +1,13 @@
 {
-  "name": "browserify-babel-preact",
+  "name": "bmgaynor",
   "version": "1.0.0",
+  "homepage": "http://bradgaynor.com",
   "scripts": {
-    "build": "browserify index.js -o bundle.js",
-    "dev": "watchify index.js -o bundle.js & browser-sync start"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "deploy": "npx gh-pages --dist ./build"
   },
   "dependencies": {
     "babel-preset-latest": "^6.16.0",
@@ -14,28 +18,15 @@
     "preact": "^7.1.0",
     "watchify": "^3.9.0"
   },
-  "babel": {
-    "presets": [
-      "latest",
-      "react"
-    ],
-    "plugins": [
-      [
-        "transform-react-jsx",
-        {
-          "pragma": "h"
-        }
-      ]
-    ]
+  "devDependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "^2.1.8"
   },
-  "browserify": {
-    "transform": [
-      "babelify"
-    ]
-  },
-  "browser-sync":{
-    "server":{
-      "baseDir": "./"
-    }
-  }
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }

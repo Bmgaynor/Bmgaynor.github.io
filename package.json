@@ -7,7 +7,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "npx gh-pages --dist ./build"
+    "deploy": "npx gh-pages --dist ./build --branch master"
   },
   "dependencies": {
     "babel-preset-latest": "^6.16.0",

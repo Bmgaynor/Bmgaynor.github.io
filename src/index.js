@@ -4,7 +4,7 @@ import './index.css'
 
 const App = () => {
   return (
-    <div>Hello from react</div>
+    <div></div>
   )
 }
 

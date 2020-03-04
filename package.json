@@ -16,7 +16,6 @@
     "babelify": "^7.3.0",
     "browser-sync": "^2.18.8",
     "browserify": "^13.3.0",
-    "preact": "^7.1.0",
     "watchify": "^3.9.0"
   },
   "devDependencies": {

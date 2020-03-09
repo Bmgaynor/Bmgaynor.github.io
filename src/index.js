@@ -1,11 +1,18 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
+import Links from './Links'
 
 const App = () => {
-  console.log('HI from the console')
   return (
-    <div></div>
+    <div className="container">
+        <div className="portrait-container">
+          <img className="portrait" src="./Me.jpg" />
+        </div>
+        <h1>Bradley Gaynor</h1>
+        <h3>Senior Software Engineer</h3>
+        <Links />
+    </div>
   )
 }
 

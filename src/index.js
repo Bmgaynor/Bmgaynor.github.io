@@ -1,18 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import Links from './Links'
-import portrait from './images/BradGaynor.jpg'
+import Highlights from './pages/Highlights'
+import Home from './pages/Home'
 
 const App = () => {
   return (
-    <div className="container">
-        <div className="portrait-container">
-          <img className="portrait" src={portrait} alt="Brad Gaynor" />
-        </div>
-        <h1>Bradley Gaynor</h1>
-        <h3>Senior Software Engineer</h3>
-        <Links />
+    <div className='App'>
+      <Home />
+      <Highlights />
     </div>
   )
 }
